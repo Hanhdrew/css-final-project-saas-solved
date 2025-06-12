@@ -697,6 +697,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
   width: 100%;
   border: 1px solid red;
 }
@@ -705,7 +706,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border: 1px solid blue;
 }
 
@@ -713,11 +714,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  gap: 10px;
   border: 1px solid blue;
 }
 
 .footer-section {
-  flex: 1 1 200px;
+  flex: 1 1 150px;
   border: 1px solid green;
 }
 
@@ -860,5 +862,10 @@ footer img {
 
   .contact-form {
     border: 1px solid green;
+  }
+
+  /* footer section  */
+  .footer-section {
+    flex: 1 0 250px;
   }
 }
