@@ -669,9 +669,11 @@ select {
 
 .marketing-terms {
   display: flex;
-  gap: 10px;
   flex-direction: column;
+  overflow: hidden;
+  gap: 10px;
   font-weight: 510;
+  border: 1px solid green;
 }
 
 .marketing-privacy {
@@ -700,6 +702,7 @@ footer {
   gap: 10px;
   width: 100%;
   border: 1px solid red;
+  transition: all 0.5s ease-in-out;
 }
 
 .footer-logo {
@@ -716,6 +719,7 @@ footer {
   flex-grow: 1;
   gap: 10px;
   border: 1px solid blue;
+  transition: all 0.5s ease-in-out;
 }
 
 .footer-section {
@@ -851,6 +855,12 @@ footer img {
     flex-direction: row;
     width: 88.54%;
     height: unset;
+    padding: unset;
+  }
+
+  .testimonial-footer,
+  .testimonial-header {
+    flex: 1 1 auto;
   }
 
   .form-container {
@@ -867,5 +877,127 @@ footer img {
   /* footer section  */
   .footer-section {
     flex: 1 0 250px;
+  }
+}
+
+/* mobile 360 - 768px  */
+
+@media (max-width: 768px) {
+  /* hero section   */
+
+  .hero-content-container {
+    text-align: center;
+  }
+
+  .icon-grid {
+    width: 328px;
+  }
+
+  .icon-google {
+    top: 0;
+    left: 0;
+  }
+
+  .icon-atlassian {
+    top: 0;
+    left: 114px;
+  }
+
+  .icon-asana {
+    top: 0;
+    left: 248px;
+  }
+
+  .icon-paypal {
+    top: 99px;
+    left: 0;
+  }
+
+  .icon-weave {
+    top: 99px;
+    left: 184px;
+  }
+
+  .icon-google-ads {
+    top: 209px;
+    left: 106px;
+  }
+
+  .icon-calendar {
+    top: 219px;
+    left: 239px;
+  }
+
+  /* intro section  */
+
+  .intro-header {
+    width: unset;
+    height: unset;
+  }
+
+  .bullet-list-container {
+    flex-direction: column;
+    justify-content: unset;
+    width: 100%;
+  }
+
+  .bullet-wrapper {
+    flex-direction: row;
+    width: 100%;
+    height: unset;
+    justify-content: unset;
+    align-items: center;
+    white-space: unset;
+  }
+
+  .bullet-line-left,
+  .bullet-line-right {
+    display: none;
+  }
+
+  /* pricing section  */
+  .pricing-header {
+    width: 100%;
+  }
+
+  .pricing-card-container {
+    padding: 0;
+  }
+
+  /* contact section  */
+
+  .testimonial-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-header {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .testimonial-container img {
+    margin: 0 auto;
+  }
+
+  .contact-form > .form-group:nth-of-type(1),
+  .contact-form > .form-group:nth-of-type(3) {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  /* footer section  */
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
   }
 }
