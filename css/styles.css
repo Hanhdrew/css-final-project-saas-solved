@@ -657,7 +657,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-evenly;
-  gap: 30px;
+  gap: 60px;
   width: 100%;
   transition: all 0.5s ease-in-out;
 }
@@ -677,7 +677,7 @@ footer {
 }
 
 .footer-section {
-  flex: 1 1 150px;
+  flex: 1 1 auto;
 }
 
 .footer-section ul {
